@@ -15,6 +15,7 @@ System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver.exe");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 driver.get("http://newtours.demoaut.com/");
+                driver.getCurrentUrl();
                 driver.close();
 		
 	}
